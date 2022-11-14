@@ -11,7 +11,7 @@ public class AddressBookSystem {
         Scanner sc = new Scanner(System.in);
         while (true) {
       
-            System.out.println("Enter 1 to Add Contact \nEnter 2 To Show Added Contacts \n 3 Update Contacts \n");
+            System.out.println("Enter 1 to Add Contact \nEnter 2 To Show Added Contacts \n 3 Update Contacts \n 4 Delete Contact\n");
             choice = sc.nextInt();
             switch (choice) {
                 case 1:
@@ -28,6 +28,9 @@ public class AddressBookSystem {
                     //System.out.println("            " + " First Name " + " Last Name " + " Address " + " City " + " State " + " Zip Code " + " Conatct Number " + " E-mail ID ");
                     contact.display();
                     break;
+                case 4:
+                 contact.deleteContact();
+                	break;
 
                 default:
                     System.out.println("You have Entered Wrong Choice ");
