@@ -10,8 +10,7 @@ public class AddressBookSystem {
         int choice;
         Scanner sc = new Scanner(System.in);
         while (true) {
-      
-            System.out.println("Enter 1 to Add Contact \nEnter 2 To Show Added Contacts \n 3 Update Contacts \n 4 Delete Contact\n");
+            System.out.println(" Enter 1 to Add Contact \n Enter 2 to Update Contact \n Enter 3 To Delete Contact \n Enter 4 To Show Added Contacts ");
             choice = sc.nextInt();
             switch (choice) {
                 case 1:
@@ -21,23 +20,19 @@ public class AddressBookSystem {
                     System.out.println();
                     break;
                 case 2:
-                	contact.update();
-                	break;
+                    contact.update();
+                    break;
                 case 3:
-                    //22System.out.println(" ");
-                    //System.out.println("            " + " First Name " + " Last Name " + " Address " + " City " + " State " + " Zip Code " + " Conatct Number " + " E-mail ID ");
-                    contact.display();
+                    contact.deleteContact();
                     break;
                 case 4:
-                 contact.deleteContact();
-                	break;
-
+                    contact.display();
+                    break;
                 default:
                     System.out.println("You have Entered Wrong Choice ");
-         System.out.println("");
+                    System.out.println();
             }
         }
 
     }
 }
-
