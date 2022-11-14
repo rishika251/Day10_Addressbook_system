@@ -10,7 +10,8 @@ public class AddressBookSystem {
         int choice;
         Scanner sc = new Scanner(System.in);
         while (true) {
-            System.out.println("Enter 1 to Add Contact \nEnter 2 To Show Added Contacts ");
+      
+            System.out.println("Enter 1 to Add Contact \nEnter 2 To Show Added Contacts \n 3 Update Contacts \n");
             choice = sc.nextInt();
             switch (choice) {
                 case 1:
@@ -19,8 +20,10 @@ public class AddressBookSystem {
                     System.out.println("Added Successfully...");
                     System.out.println();
                     break;
-
                 case 2:
+                	contact.update();
+                	break;
+                case 3:
                     //22System.out.println(" ");
                     //System.out.println("            " + " First Name " + " Last Name " + " Address " + " City " + " State " + " Zip Code " + " Conatct Number " + " E-mail ID ");
                     contact.display();
