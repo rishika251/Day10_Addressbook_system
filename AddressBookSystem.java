@@ -28,6 +28,7 @@ public class AddressBookSystem {
 
                 default:
                     System.out.println("You have Entered Wrong Choice ");
+         System.out.println("");
             }
         }
 
